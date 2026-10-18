@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+:root{--wine:#701c28;--wine-dark:#310d14;--gold:#c9a45c;--gold-light:#ead8a7;--paper:#f7f0df;--ink:#392326}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:var(--wine-dark)}
+body{color:var(--paper);font-family:'Cormorant Garamond',Georgia,serif;background:radial-gradient(ellipse at 50% 15%,#87313b 0%,transparent 55%),linear-gradient(135deg,#2c0c12,#641823 55%,#310d14)}
+button{font:inherit;cursor:pointer}
+.site{width:min(1120px,100%);min-height:100vh;margin:auto;padding:20px clamp(14px,4vw,42px);display:flex;flex-direction:column}
+.header{display:flex;align-items:center;gap:12px;border-bottom:1px solid #c9a45c55;padding-bottom:14px}
+.seal{width:42px;height:42px;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold-light);font-size:27px}
+.brand span,.eyebrow{font-size:11px;letter-spacing:.2em;color:var(--gold-light);margin:0 0 4px}
+.brand h1{font:600 20px 'Playfair Display',Georgia,serif;letter-spacing:.13em;margin:0;color:#fff0d2}
+.sound{margin-left:auto;border:1px solid #ead8a7aa;color:var(--gold-light);background:transparent;border-radius:24px;padding:9px 14px}
+.welcome{width:min(620px,100%);margin:auto;text-align:center;padding:34px 12px}
+.ornament{color:var(--gold);font-size:24px;letter-spacing:.2em;margin-bottom:20px}
+.ornament.bottom{margin:22px 0 0}
+.welcome h2,.reader-heading h2{font:500 clamp(32px,7vw,54px) 'Playfair Display',Georgia,serif;color:#fff0d2;margin:8px 0}
+.subtitle{font-size:19px;font-style:italic;color:var(--gold-light);margin:10px 0 22px}
+.cover{width:min(300px,76vw);aspect-ratio:3/4;margin:0 auto 24px;padding:9px;border:1px solid var(--gold);background:#ead8a711;box-shadow:0 18px 50px #17070a99}
+.cover img{display:none;width:100%;height:100%;object-fit:cover}
+.cover-placeholder{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;border:1px solid #c9a45c99;background:radial-gradient(circle,#87313b,#4a111b);color:var(--gold-light);padding:16px}
+.cover-placeholder strong{font:600 20px 'Playfair Display',Georgia,serif;letter-spacing:.2em}
+.cover-placeholder small{font-size:12px;opacity:.85}
+.happiness{font-size:52px;color:var(--gold)}
+.primary{border:1px solid var(--gold-light);background:linear-gradient(135deg,#d8b66e,#a87932);color:#3d1118;padding:13px 28px;letter-spacing:.12em;font-size:13px;font-weight:bold}
+.hint{color:#d5b9a7;font-size:13px;margin-top:15px}
+.reader{width:100%;margin:28px auto 20px}
+.hidden{display:none!important}
+.reader-heading{text-align:center;margin-bottom:18px}
+.reader-heading h2{font-size:clamp(28px,5vw,42px)}
+.reader-heading p:last-child{color:#e3cdb7;margin:8px 0;font-size:17px}
+.book-stage{width:100%;display:flex;justify-content:center;align-items:center;min-height:250px;overflow:visible}
+.book{margin:auto}
+.book .page{background:var(--paper);color:var(--ink);overflow:hidden}
+.book .page img{display:block;width:100%;height:100%;object-fit:contain;background:var(--paper)}
+.controls{display:flex;justify-content:center;align-items:center;gap:14px;margin:22px auto 12px}
+.secondary{background:transparent;color:var(--gold-light);border:1px solid #ead8a7aa;padding:10px 14px}
+.secondary:disabled{opacity:.35;cursor:not-allowed}
+#page-counter{min-width:80px;text-align:center;font-size:14px}
+.reader-footer{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #c9a45c44;padding-top:13px;color:#c7a99b;font-size:13px}
+.text-button{background:none;border:0;color:var(--gold-light);text-decoration:underline}
+.status{text-align:center;color:#f2d89d;font-size:14px;min-height:18px;overflow-wrap:anywhere}
+.footer{text-align:center;color:#bda091;font-size:13px;padding:16px 0 3px;border-top:1px solid #c9a45c33}
+@media(max-width:600px){.site{padding:12px}.seal{width:36px;height:36px;font-size:23px}.brand h1{font-size:17px}.brand span,.eyebrow{font-size:9px}.sound{padding:8px 10px;font-size:12px}.welcome{padding:28px 8px}.controls{gap:7px}.secondary{padding:9px 10px;font-size:12px}.reader-footer{font-size:11px}}

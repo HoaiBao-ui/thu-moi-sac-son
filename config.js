@@ -1,30 +1,14 @@
-/*
-  CHỈ CẦN SỬA FILE NÀY ĐỂ ĐỔI TÊN SỰ KIỆN, ẢNH VÀ NHẠC.
-  Hãy đặt đúng 6 ảnh trong assets/pages theo tên trong danh sách.
-*/
-window.INVITATION_CONFIG = {
-  eventTitle: "SẮC SON",
-  welcomeTitle: "Sắc Son",
-  subtitle: "Chữ duyên nối lại, trọn đường sắc son",
-  description: "Đám cưới miền Tây xưa",
-  kicker: "TRÂN TRỌNG KÍNH MỜI",
-  footerNote: "Một lời mời trân trọng, một kỷ niệm đáng nhớ.",
-
-  showCoverImage: true,
-  coverImage: "assets/pages/01-bia.jpg.jpg",
-
+const CONFIG = {
+  // Đường dẫn đến thư mục chứa ảnh
   pages: [
-    "assets/pages/01-bia.jpg.jpg",
-    "assets/pages/02-loi-moi.jpg.jpg",
-    "assets/pages/03-gioi-thieu.jpg.jpg",
-    "assets/pages/04-thong-tin.jpg.jpg",
-    "assets/pages/05-loi-nhan.jpg.jpg",
-    "assets/pages/06-ket-thuc.jpg.jpg"
+    "thu_moi_sac_son_da_sua/assets/pages/01-bia.jpg",
+    "thu_moi_sac_son_da_sua/assets/pages/02-loi-moi.jpg",
+    "thu_moi_sac_son_da_sua/assets/pages/03-gioi-thieu.jpg",
+    "thu_moi_sac_son_da_sua/assets/pages/04-thong-tin.jpg",
+    "thu_moi_sac_son_da_sua/assets/pages/05-loi-nhan.jpg",
+    "thu_moi_sac_son_da_sua/assets/pages/06-ket-thuc.jpg"
   ],
-
-  // Nếu dùng PDF: đặt pages: [] và nhập đường dẫn file vào pdf.
-  pdf: "",
-  music: "assets/audio/nhac-nen.mp3.mp3",
-  pageWidth: 420,
-  pageHeight: 594
+  
+  // Đường dẫn file âm thanh (nếu có)
+  audio: "thu_moi_sac_son_da_sua/assets/audio/bgm.mp3"
 };

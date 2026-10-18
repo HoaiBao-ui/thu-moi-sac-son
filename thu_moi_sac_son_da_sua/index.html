@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#651a27">
+  <title>Thư mời trực tuyến</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="site">
+    <header class="header">
+      <div class="seal">囍</div>
+      <div class="brand"><span>THƯ MỜI TRỰC TUYẾN</span><h1 id="event-title">SẮC SON</h1></div>
+      <button id="sound-toggle" class="sound" type="button">♫ <span id="sound-label">Bật nhạc</span></button>
+    </header>
+
+    <section id="welcome" class="welcome">
+      <div class="ornament">✦　❧　✦</div>
+      <p class="eyebrow" id="welcome-kicker">TRÂN TRỌNG KÍNH MỜI</p>
+      <h2 id="welcome-title">Sắc Son</h2>
+      <p class="subtitle" id="welcome-subtitle">Chữ duyên nối lại, trọn đường sắc son</p>
+      <div class="cover">
+        <img id="cover-image" alt="Bìa thư mời">
+        <div id="cover-placeholder" class="cover-placeholder">
+          <span class="happiness">囍</span><strong>THƯ MỜI</strong>
+          <small>Thêm ảnh bìa vào assets/pages/01-bia.jpg</small>
+        </div>
+      </div>
+      <button id="open-invitation" class="primary" type="button">MỞ THIỆP MỜI <span>↗</span></button>
+      <p class="hint">Bạn có thể bật nhạc sau khi mở thiệp.</p>
+      <div class="ornament bottom">❧　✦　❧</div>
+    </section>
+
+    <section id="reader" class="reader hidden">
+      <div class="reader-heading">
+        <p class="eyebrow" id="reader-kicker">TRÂN TRỌNG KÍNH MỜI</p>
+        <h2 id="reader-title">Sắc Son</h2>
+        <p id="reader-description">Lật trang để khám phá nội dung thư mời.</p>
+      </div>
+      <div class="book-stage"><div id="book" class="book"></div></div>
+      <div class="controls">
+        <button id="prev-page" class="secondary" type="button">← Trang trước</button>
+        <span id="page-counter">Trang 1 / 6</span>
+        <button id="next-page" class="secondary" type="button">Trang sau →</button>
+      </div>
+      <div class="reader-footer">
+        <button id="back-to-cover" class="text-button" type="button">↶ Về bìa thư</button>
+        <span>Thiết kế thư mời trực tuyến</span>
+      </div>
+      <p id="status-message" class="status" role="status"></p>
+    </section>
+    <footer class="footer" id="footer-note">Một lời mời trân trọng, một kỷ niệm đáng nhớ.</footer>
+  </main>
+
+  <audio id="background-music" loop preload="none"></audio>
+  <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
